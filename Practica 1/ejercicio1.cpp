@@ -12,7 +12,7 @@ int main() {
     cout << "Ingrese otro valor entero" << endl;
     cin >> B;
     suma = A + B;
-    cout << "Suma de ambos: " << suma << endl;
+    cout << "Sumaaa de ambos: " << suma << endl;
     resta = A - B;
     cout << "Resta de ambos: " << resta << endl;
     producto = A * B;
