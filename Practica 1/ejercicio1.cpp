@@ -7,7 +7,7 @@ int main() {
 
     int A,B;
     int suma, resta, producto;
-    cout << "Ingrese un valor entero" << endl;
+    cout << "Ingrese un valor enteero" << endl;
     cin >> A;
     cout << "Ingrese otro valor entero" << endl;
     cin >> B;
