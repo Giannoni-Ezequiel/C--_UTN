@@ -6,6 +6,8 @@ using namespace std;
 int main() {
 
     int A,B;
+    char C=0;
+    cout<<C<<endl;
     int suma, resta, producto;
     cout << "Ingrese un valor enteero" << endl;
     cin >> A;
