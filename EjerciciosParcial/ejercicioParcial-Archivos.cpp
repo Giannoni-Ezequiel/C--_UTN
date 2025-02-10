@@ -83,7 +83,7 @@ void inicializar(peli vec[], int cantP, peli ValorIni){
 }
 
 void insertar(peli vec[], int &len, peli valor, int pos){
-    for(int i=len; i>pos; i++){
+    for(int i=len; i>pos; i--){
         vec[i].cod= vec[i-1].cod;
         vec[i].opi= vec[i-1].opi;
         vec[i].vistas= vec[i-1].vistas;
