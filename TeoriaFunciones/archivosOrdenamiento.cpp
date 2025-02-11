@@ -12,7 +12,6 @@ void inicializar(Alumno vec[], int cantP, Alumno ValorIni);
 void insertar(Alumno vec[], int &len, Alumno valor, int pos);
 void insertarOrdenado(Alumno vec[], int &len, Alumno valor);
 
-
 int main(){
     Alumno vec[10];
     int len = 0;

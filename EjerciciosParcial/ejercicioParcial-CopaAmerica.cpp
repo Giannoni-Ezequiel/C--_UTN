@@ -20,10 +20,10 @@ struct Jugador2{
 };
 void inicializar(Jugador vec[], int cantP, Jugador ValorIni);
 void inicializar2(Jugador2 vec[], int cantP, Jugador2 ValorIni);
-
 void insertar(Jugador vec[], int &len, Jugador valor, int pos);
 void insertarOrdenado(Jugador vec[], int &len, Jugador valor);
 void insertarOrdenado2(Jugador2 vec[], int &len, Jugador2 valor);
+
 int main(){
     Jugador sub23[100];
     int len1=0;

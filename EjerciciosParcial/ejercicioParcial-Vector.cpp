@@ -10,9 +10,11 @@ struct producto{
     int codProducto;
     int cantProductos;
 };
+
 void masunidades(producto vec[],int len);
 void menosunidades(producto vec[], int len);
 void sumatoria(producto vec[], int len);
+
 int main(){
     producto vec[150];
     int len;
