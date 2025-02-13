@@ -13,23 +13,21 @@ iii. La cantidad de contenedores que debe trasladar a cada puerto
 using namespace std;
 
 int main(){
-    int buque=100;
     int puerto;
     int id_contenedor=0;
     int peso;
-    int peso_contenedor=0;
+    int pesoTotal=0;
     int elDeMayorPeso=0;
-    int arribo;
     int cantP1=0;
     int cantP2=0;
     int cantP3=0;
-    cout<<"Indique numero de puerto (1-3) o cualquier otro numero para terminar"<<puerto<<endl;
+    cout<<"Indique numero de puerto (1-3) o cualquier otro numero para terminar"<<endl;
     cin>>puerto;
-    while(puerto<=3&&puerto>0 || id_contenedor>100){
+    while(((puerto<=3)&&(puerto>0)) || id_contenedor>=100){
         id_contenedor++;
         cout<<"Indique cuanto pesa"<<endl;
         cin>>peso;
-        peso_contenedor = peso_contenedor + peso;
+        pesoTotal = pesoTotal + peso;
         if(peso>elDeMayorPeso){
             elDeMayorPeso = id_contenedor;
         }
@@ -44,17 +42,17 @@ int main(){
                 cantP3++;
                 break;
         }
-        cout<<"Indique numero para"<<id_contenedor<<endl;
-        cin>>puerto;
-        
+        cout<<"Indique numero de puerto (1-3) o cualquier otro numero para terminar"<<endl;
+        cin>>puerto; 
     }
     cout<<"i.----------------------------------------------"<<endl;
-    cout<<"Peso total: "<<peso_contenedor<<" kg."<<endl;
+    cout<<"Peso total: "<<pesoTotal<<" kg."<<endl;
     cout<<"ii.----------------------------------------------"<<endl;
-    cout<<"La identificación del contenedor de mayor peso es: "<<id_contenedor<<endl;
+    cout<<"La identificacion del contenedor de mayor peso es: "<<id_contenedor<<endl;
     cout<<"iii.----------------------------------------------"<<endl;
-    cout<<"Cantidad en puerto 1: "<<cantP1<<" kg."<<endl;
-    cout<<"Cantidad en puerto 1: "<<cantP2<<" kg."<<endl;
-    cout<<"Cantidad en puerto 1: "<<cantP3<<" kg."<<endl;
+    cout<<"Cantidad en puerto 1: "<<cantP1<<endl;
+    cout<<"Cantidad en puerto 2: "<<cantP2<<endl;
+    cout<<"Cantidad en puerto 3: "<<cantP3<<endl;
+    cout<<"----------------------------------------------"<<endl;
     return 0;
 }

@@ -8,15 +8,9 @@ int main(){
     cin >> lado1;
     cin >> lado2;
     cin >> lado3;
-    if(lado1+lado2>lado3 &&
-       lado2+lado3>lado1 &&
-       lado1+lado3>lado2)
-       {
+    if(lado2+lado3>lado1 || lado1+lado2>lado3 || lado1+lado3>lado2){
         cout << "Se formo un triangulo." << endl;
-       } 
-    else
-       {
-        cout << "No se formo un triangulo." << endl;
-       };
+    }
+    
     return 0;
 }
