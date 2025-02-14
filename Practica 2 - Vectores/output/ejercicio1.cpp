@@ -6,8 +6,6 @@ que contenga los primeros N números naturales pares.
 #include <iostream>
 using namespace std;
 
-
-
 int main(){
     int n;
     cout<<"Ingrese un valor < 30"<<endl;
