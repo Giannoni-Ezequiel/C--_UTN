@@ -8,3 +8,11 @@ El formato de la salida debe ser el siguiente:
 . . 12 salió ... veces
 
 */
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    return 0;
+}

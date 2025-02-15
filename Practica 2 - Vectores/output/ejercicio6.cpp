@@ -7,3 +7,11 @@ Se pide informar:
 •el código de deporte con la mayor cantidad de inscriptos
 
 */
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    return 0;
+}
