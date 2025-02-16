@@ -5,6 +5,16 @@ struct Nodo{
     Nodo *sgte;
 };
 
+void agregarPrimero(Nodo*&Lista, int valor){
+    //Crear Nodo
+    Nodo* nuevo = new Nodo();
+    //Cargar el Nodo
+    nuevo -> info = valor;
+    nuevo -> sgte = Lista;
+    //Enlazar
+    Lista = nuevo;
+}
+
 void unionListas(Nodo *ListaA, Nodo *ListaB, Nodo *&ListaC){
     int aux;
     Nodo *auxListaA=ListaA;
@@ -15,7 +25,7 @@ void unionListas(Nodo *ListaA, Nodo *ListaB, Nodo *&ListaC){
         auxListaA=auxListaA->sgte;
     }
     while(auxListaB=NULL){
-        aux = auxListaB>info;
+        aux = auxListaB->info;
         agregarPrimero(ListaC,aux);
         auxListaB=auxListaB->sgte;
     }
@@ -24,15 +34,24 @@ void unionListas(Nodo *ListaA, Nodo *ListaB, Nodo *&ListaC){
     
 }
 
+int eliminarPrimero(Nodo*&Lista){
+    int ret;
+    ret = Lista->info;
+    Nodo*aux=Lista;
+    Lista = aux->sgte; //Lista = Lista->sgte
+    delete (aux);
+    return ret; 
+}
+
 void unionListas2(Nodo *listaA, Nodo *listaB, Nodo *&ListaC){
     int valor;
     while(listaA!=NULL){
         valor=eliminarPrimero(listaA);
-        agregarPrimero(listaC,valor);
+        agregarPrimero(ListaC,valor);
 
     }
     while(listaB!=NULL){
         valor=eliminarPrimero(listaB);
-        agregarPrimero(listaC,valor);
+        agregarPrimero(ListaC,valor);
     }
 }
