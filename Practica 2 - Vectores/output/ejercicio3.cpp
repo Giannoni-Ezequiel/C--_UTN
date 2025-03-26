@@ -11,7 +11,7 @@ b.	informe el producto de los elementos impares que ocupen posición par.
 using namespace std;
 
 int main(){
-    int vec[]={0};
+    int vec[100]={0};
     int len=0;
     int vecPosMins[]={0};
     int lenM=0;
