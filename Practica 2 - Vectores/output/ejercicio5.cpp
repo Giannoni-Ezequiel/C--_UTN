@@ -16,7 +16,7 @@ using namespace std;
 struct Tirada{
     int dado1;
     int dado2;
-}
+};
 
 int main(){
     int dado1,dado2;

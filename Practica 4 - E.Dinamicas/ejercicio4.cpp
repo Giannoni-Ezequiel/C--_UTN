@@ -1,5 +1,6 @@
 /*
-
+Dada una pila y dos valores X e I, desarrollar un procedimiento que inserte el valor X en la
+posición I de la pila si es posible. (Definir parámetros y codificar).
 */
 #include <iostream>
 using namespace std;

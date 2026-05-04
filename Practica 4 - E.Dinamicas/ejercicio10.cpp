@@ -11,14 +11,14 @@ struct nodo{
     int info;
     nodo* sgte;
 };
-
+//Sirve para vaciar una cola
 void unqueue2(nodo*&fte, nodo*&fin){
     nodo* p = fte;
     fte = p->sgte;
     if(fte==NULL){
         fin == NULL;
-        cout<<"N"<<endl;
-    } else {cout<<"S"<<endl;};
+        cout<<"Fin apunta a null"<<endl;
+    } else {cout<<"Sigue"<<endl;};
     delete p;
     unqueue2(fte,fin);
 }
