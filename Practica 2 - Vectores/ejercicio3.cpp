@@ -13,17 +13,20 @@ using namespace std;
 int main(){
     int vec[100]={0};
     int len=0;
-    int vecPosMins[]={0};
+    int vecPosMins[100];
     int lenM=0;
     int minimo;
     int valor;
-    int prodImpars=0; 
+    int prodImpars=1; 
     
     cout<<"Ingrese un valor y 0 para cortar"<<endl;
     cin>>valor;
+    if (valor == 0) return 0; // Caso borde: lista vacía
+
     minimo=valor;
+
     while(valor!=0){
-        vec[len]=valor;
+        vec[len]=valor; // ??
         if(len%2==0 && valor%2==1){
         prodImpars = prodImpars * valor;}
         if(minimo>valor){
@@ -43,7 +46,7 @@ int main(){
     cout<<"----------"<<minimo<<endl;
     if(lenM>0){
         for(int i=0;i<lenM;i++){
-        cout<<vec[i]<<endl;
+        cout<<"Posicion: "<< vec[i]<<endl;
         }
     }
     cout<<"-----------Producto de impares en posicion par-------------"<<endl;
